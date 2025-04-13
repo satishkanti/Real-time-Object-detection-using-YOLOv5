@@ -1,7 +1,7 @@
 ## 🔍 Overview
 This project implements a pothole detection system using the YOLOv5 object detection model. It can identify potholes in both static images and video streams, making it useful for road maintenance authorities, autonomous vehicles, and transportation safety applications.
 
-##✨ Features
+## ✨ Features
 
 - Real-time pothole detection in video streams
 - Static image pothole detection
@@ -13,29 +13,29 @@ This project implements a pothole detection system using the YOLOv5 object detec
 ---
 
 ## 📦 Requirements
-cvzone==1.5.6
-ultralytics==8.0.26
-hydra-core>=1.2.0
-matplotlib>=3.2.2
-numpy>=1.18.5
-opencv-python==4.5.4.60
-Pillow>=7.1.2
-PyYAML>=5.3.1
-requests>=2.23.0
-scipy>=1.4.1
-torch>=1.7.0
-torchvision>=0.8.1
-tqdm>=4.64.0
-filterpy==1.4.5
-scikit-image==0.19.3
-lap==0.4.0
+- cvzone==1.5.6
+- ultralytics==8.0.26
+- hydra-core>=1.2.0
+- matplotlib>=3.2.2
+- numpy>=1.18.5
+- opencv-python==4.5.4.60
+- Pillow>=7.1.2
+- PyYAML>=5.3.1
+- requests>=2.23.0
+- scipy>=1.4.1
+- torch>=1.7.0
+- torchvision>=0.8.1
+- tqdm>=4.64.0
+- filterpy==1.4.5
+- scikit-image==0.19.3
+- lap==0.4.0
 
 ---
 
-##💻 Installation
+## 💻 Installation
 
 - Clone the repository:
-  git clone https://github.com/yourusername/pothole-detection.git
+  git clone [https://github.com/yourusername/pothole-detection.git](https://github.com/satishkanti/Real-time-Object-detection-using-YOLOv5.git)
   cd pothole-detection
 
 - Create a virtual environment (optional but recommended):
@@ -114,45 +114,42 @@ cv2.destroyAllWindows()
 ## 🧠 Model Training
 The model was trained using YOLOv5 with the following configuration:
 
-Base model: YOLOv5l (large)
-Epochs: 50
-Image size: 640x640
-Dataset: Custom pothole dataset
+1. Base model: YOLOv5l (large)
+2. Epochs: 50
+2. Image size: 640x640
+4. Dataset: Custom pothole dataset
 
 To train your own model:
 
-Prepare your dataset following YOLO format
-Create a data.yaml file with dataset configuration
-Run the training:
-
-bashyolo task=detect mode=train model=yolov5l.pt data=/path/to/data.yaml epochs=50 imgsz=640
+1. Prepare your dataset following YOLO format
+2. Create a data.yaml file with dataset configuration
+3. Run the training:
+   yolo task=detect mode=train model=yolov5l.pt data=/path/to/data.yaml epochs=50 imgsz=640
 
 ---
 
 ## 📊 Results
 Our model achieves the following performance metrics:
-
-mAP50: 0.806
-mAP50-95: 0.527
-Precision: 0.853
-Recall: 0.716
+- mAP50: 0.806
+- mAP50-95: 0.527
+- Precision: 0.853
+- Recall: 0.716
 
 Training progression:
-
-Initial mAP50: 0.264
-Final mAP50: 0.780
-Best mAP50-95: 0.527 (Epoch 43/50)
+- Initial mAP50: 0.264
+- Final mAP50: 0.780
+- Best mAP50-95: 0.527 (Epoch 43/50)
 
 ---
 
 ## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-Fork the repository
-Create your feature branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add some amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
+1. Fork the repository
+2. Create your feature branch (git checkout -b feature/amazing-feature)
+3. Commit your changes (git commit -m 'Add some amazing feature')
+4. Push to the branch (git push origin feature/amazing-feature)
+5. Open a Pull Request
 
 ---
 
