@@ -34,45 +34,45 @@ This project implements a pothole detection system using the YOLOv5 object detec
 
 ## 💻 Installation
 
-- Clone the repository:
-     git clone [https://github.com/yourusername/pothole-detection.git](https://github.com/satishkanti/Real-time-Object-detection-using-YOLOv5.git)
-     cd pothole-detection
+- Clone the repository:  
+     git clone [https://github.com/yourusername/pothole-detection.git](https://github.com/satishkanti/Real-time-Object-detection-using-YOLOv5.git)  
+     cd pothole-detection  
 
-- Create a virtual environment (optional but recommended):
-     python -m venv venv
-     source venv/bin/activate  # On Windows: venv\Scripts\activate
+- Create a virtual environment (optional but recommended):  
+     python -m venv venv  
+     source venv/bin/activate  # On Windows: venv\Scripts\activate  
 
-- Install the required packages:
-     pip install -r requirements.txt
+- Install the required packages:  
+     pip install -r requirements.txt  
 
-- Download the pre-trained model:
+- Download the pre-trained model:  
   The model file "pothole.pt" should be placed in the project root directory
 
 ---
 
 ## 🚀 Usage
 Image Detection
-- To detect potholes in a single image:
-     from ultralytics import YOLO
-     import cv2
+- To detect potholes in a single image:  
+     from ultralytics import YOLO  
+     import cv2  
 
 ##### Load the model
 model = YOLO('pothole.pt')
 
 ##### Perform detection
-   results = model("path/to/your/image.jpg", show=True)
-   cv2.waitKey(0)
-- Video Detection
-   To detect potholes in a video stream:
-      from ultralytics import YOLO
-      import cv2
-      import cvzone
-      import math
+   results = model("path/to/your/image.jpg", show=True)  
+   cv2.waitKey(0)  
+- Video Detection  
+   To detect potholes in a video stream:  
+      from ultralytics import YOLO  
+      import cv2  
+      import cvzone  
+      import math  
 
 ##### Load the model
-   cap = cv2.VideoCapture("path/to/your/video.mp4")
-   model = YOLO("pothole.pt")
-   classNames = ["pothole"]
+   cap = cv2.VideoCapture("path/to/your/video.mp4")  
+   model = YOLO("pothole.pt")  
+   classNames = ["pothole"]  
 
 while True:
     success, img = cap.read()
@@ -154,4 +154,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ---
 
 ## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
