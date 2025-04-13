@@ -35,15 +35,15 @@ This project implements a pothole detection system using the YOLOv5 object detec
 ## 💻 Installation
 
 - Clone the repository:
-  git clone [https://github.com/yourusername/pothole-detection.git](https://github.com/satishkanti/Real-time-Object-detection-using-YOLOv5.git)
-  cd pothole-detection
+     git clone [https://github.com/yourusername/pothole-detection.git](https://github.com/satishkanti/Real-time-Object-detection-using-YOLOv5.git)
+     cd pothole-detection
 
 - Create a virtual environment (optional but recommended):
-  python -m venv venv
-  source venv/bin/activate  # On Windows: venv\Scripts\activate
+     python -m venv venv
+     source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 - Install the required packages:
-  pip install -r requirements.txt
+     pip install -r requirements.txt
 
 - Download the pre-trained model:
   The model file "pothole.pt" should be placed in the project root directory
@@ -53,26 +53,26 @@ This project implements a pothole detection system using the YOLOv5 object detec
 ## 🚀 Usage
 Image Detection
 - To detect potholes in a single image:
-  from ultralytics import YOLO
-  import cv2
+     from ultralytics import YOLO
+     import cv2
 
-### Load the model
-  model = YOLO('pothole.pt')
+##### Load the model
+model = YOLO('pothole.pt')
 
-### Perform detection
-results = model("path/to/your/image.jpg", show=True)
-cv2.waitKey(0)
+##### Perform detection
+   results = model("path/to/your/image.jpg", show=True)
+   cv2.waitKey(0)
 - Video Detection
-To detect potholes in a video stream:
-from ultralytics import YOLO
-import cv2
-import cvzone
-import math
+   To detect potholes in a video stream:
+      from ultralytics import YOLO
+      import cv2
+      import cvzone
+      import math
 
-### Load the model
-cap = cv2.VideoCapture("path/to/your/video.mp4")
-model = YOLO("pothole.pt")
-classNames = ["pothole"]
+##### Load the model
+   cap = cv2.VideoCapture("path/to/your/video.mp4")
+   model = YOLO("pothole.pt")
+   classNames = ["pothole"]
 
 while True:
     success, img = cap.read()
