@@ -35,7 +35,7 @@ This project implements a pothole detection system using the YOLOv5 object detec
 ## 💻 Installation
 
 - Clone the repository:  
-     git clone [https://github.com/yourusername/pothole-detection.git](https://github.com/satishkanti/Real-time-Object-detection-using-YOLOv5.git)  
+     git clone [https://github.com/satishkanti/Real-time-Object-detection-using-YOLOv5.git](https://github.com/satishkanti/Real-time-Object-detection-using-YOLOv5.git)  
      cd pothole-detection  
 
 - Create a virtual environment (optional but recommended):  
