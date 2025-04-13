@@ -52,19 +52,19 @@ This project implements a pothole detection system using the YOLOv5 object detec
 
 ## 🚀 Usage
 Image Detection
-To detect potholes in a single image:
-pythonfrom ultralytics import YOLO
-import cv2
+- To detect potholes in a single image:
+  from ultralytics import YOLO
+  import cv2
 
 ### Load the model
-model = YOLO('pothole.pt')
+  model = YOLO('pothole.pt')
 
 ### Perform detection
 results = model("path/to/your/image.jpg", show=True)
 cv2.waitKey(0)
-Video Detection
+- Video Detection
 To detect potholes in a video stream:
-pythonfrom ultralytics import YOLO
+from ultralytics import YOLO
 import cv2
 import cvzone
 import math
